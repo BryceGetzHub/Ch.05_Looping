@@ -43,18 +43,18 @@ while not done:
         distance_from_natives = random.randrange(7, 15)
 
     elif choice.lower() == "c": #Fullspeed
-        miles_traveled = random.randrange(10, 21)
+        miles_traveled += random.randint(10, 21)
         print("You have traveled", miles_traveled, "miles.")
         thirst = thirst + 1
-        camel_tiredness = random.randrange(1, 4)
+        camel_tiredness += random.randint(1, 4)
         distance_from_natives = random.randrange(7, 15)
 
     elif choice.lower() == "b": #moderate speed
-        miles_traveled = random.randrange(5, 13)
+        miles_traveled += random.randint(5, 13)
         print("You have traveled", miles_traveled, "miles.")
         thirst = thirst + 1
         camel_tiredness = camel_tiredness + 1
-        distance_from_natives = random.randrange(7, 15)
+        distance_from_natives += random.randint(7, 15)
 
     elif choice.lower() == "a": #drink water
         if drinks_left > 0:
