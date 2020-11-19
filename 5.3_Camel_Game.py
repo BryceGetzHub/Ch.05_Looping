@@ -40,14 +40,14 @@ while not done:
     elif choice.lower() == "d": #Stop for the night
         camel_tiredness = 0
         print("Your camel is happy")
-        distance_from_natives = random.randrange(7, 15)
+        distance_from_natives += random.randint(7, 15)
 
     elif choice.lower() == "c": #Fullspeed
         miles_traveled += random.randint(10, 21)
         print("You have traveled", miles_traveled, "miles.")
         thirst = thirst + 1
         camel_tiredness += random.randint(1, 4)
-        distance_from_natives = random.randrange(7, 15)
+        distance_from_natives += random.randint(7, 15)
 
     elif choice.lower() == "b": #moderate speed
         miles_traveled += random.randint(5, 13)
